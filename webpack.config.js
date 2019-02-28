@@ -25,5 +25,12 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolve: {
+        alias: {
+            src: path.resolve(__dirname, 'src/'),
+            core: path.resolve(__dirname, 'src/core/'),
+            root: path.resolve(__dirname, '')
+        }
     }
 };
