@@ -1,0 +1,125 @@
+@import 'core/scss/_colors.scss';
+
+section#header {
+    background-image: url('../img/header-artboard.png');
+    height: 575px;
+    .head {
+        max-width: 1400px;
+        height: 80px;
+        padding-right: 25px;
+        padding-left: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logocation {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            .location {
+                display: flex;
+                align-items: center;
+                padding-left: 41px;
+                select {
+                    cursor: pointer;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    padding-bottom: 3px;
+                    border-bottom: 1px dotted #fff;
+                    background: none;
+                    -webkit-appearance: none;
+                    option {
+                        color: #000;
+                    }
+                }
+                i {
+                    margin-left: 10px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        nav {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 436px;
+            text-transform: uppercase;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                background: none;
+                border: none;
+                height: auto;
+                span {
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+                i {
+                    position: absolute;
+                    right: -12px;
+                    top: 6px;
+                }
+            }
+        }
+        .actions {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            a {
+                user-select: none;
+                span {
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #fff;
+                }
+            }
+            .login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                width: 109px;
+                span {
+                    padding-left: 10px;
+                }
+                &:hover {
+                    border-radius: 5px;
+                }
+            }
+            .addObject {
+                cursor: pointer;
+                padding: 12px 25px;
+                border: 1px solid white;
+                border-radius: 3px;
+                &::before {
+                    content: '+';
+                    color: white;
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+                &:hover {
+                    // background-color: rgba(255, 255, 255, 0.6);
+                    background-color: #fff;
+                    span {
+                        color: $color_blue_head;
+                    }
+                    &::before {
+                        color: $color_blue_head;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        
+    }
+}

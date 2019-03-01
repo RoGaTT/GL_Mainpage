@@ -1,0 +1,16 @@
+@import './header.scss';
+@import 'core/scss/reset.scss';
+@import 'core/scss/_fonts.scss';
+
+body, html {
+    font-family: $font_main;
+    box-sizing: border-box;
+}
+
+i.arrow {
+    border: 5px solid transparent;	
+    border-top: 5px solid green;
+    &.white {
+        border-top-color: #fff;
+    }
+}

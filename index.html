@@ -5,9 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GetLooky_Mainpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel='stylesheet' href='dist/style.css'>
 </head>
 <body>
+    <section id="header">
+        <div class="head">
+            <div class="logocation">
+                <div class="logo">
+                    <img src="src/img/logo.png" alt="">
+                </div>
+                <div class="location">
+                    <select name="location_select" id="location_select">
+                        <option value="0">Санкт-Петербург</option>
+                        <option value="1">Москва</option>
+                    </select>
+                    <i class="arrow down white" id='location_arrow'></i>
+                </div>
+            </div>
+            <nav>
+                <a href="">Поиск</a>
+                <a href="">Реализовано</a>
+                <a href="">Справочник</a>
+                <button>
+                    <span>Ещё</span>
+                    <i class="arrow down white"></i>
+                </button>
+            </nav>
+            <div class="actions">
+                <a class='login'>
+                    <img src="src/img/profile.png" alt="">
+                    <span href="">Войти</span>
+                </a>
+                <a class='addObject'>
+                    <span href="">Добавить объект</span>
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            
+        </div>
+    </section>
+
+
+
+
     <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 </html>
