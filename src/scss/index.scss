@@ -1,5 +1,12 @@
+//Части страницы
 @import './header.scss';
 @import './advertisements.scss';
+@import './rent.scss';
+
+//Блоки
+@import './silder_block.scss';
+
+//Утилиты
 @import 'core/scss/reset.scss';
 @import 'core/scss/_fonts.scss';
 
