@@ -1,0 +1,154 @@
+@import '../core/scss/colors';
+
+section#advertisements {
+    display: flex;
+    justify-content: center;
+    padding: 69px 100px 91px 100px;
+    background-color: $color_grey_bg;
+    .content {
+        width: 100%;
+        max-width: 1180px;
+        //Класс для создания отступов
+        .box {
+            padding: 10px;
+        }
+        //Шаблон блока
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            // padding: 34px 27px 24px 27px;
+            color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //Картинка для фона
+            .bg {
+                width: 100%;
+                height: auto;
+                filter: brightness(0.45);
+                transition: all 0.3s ease-in;
+            }
+            //Анимация наведения
+            &:hover {
+                .bg {
+                    transform: scale(1.1);
+                    filter: brightness(0.7);
+                    // filter: blur(1px)
+                }
+            }
+            //Текстовая часть
+            .info {
+                position: absolute;
+                width: 100%;
+                bottom: 21px;
+                left: 27px;
+                //Заголовок
+                .title {
+                    font-size: 21px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                //Данные
+                .stats {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    div:nth-child(n) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        width: 50%;
+                        height: 100%;
+                        .stat {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 6px;
+                            white-space: nowrap;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    h4 {
+                        color: rgba($color: #fff, $alpha: 0.6);
+                        margin-left: 11px;
+                    }
+                }
+                //Блок данных
+                .stat {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 6px;
+                    white-space: nowrap;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        //Белые блоки
+        .white {
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            img {
+                margin-bottom: 16px;
+            }
+            .info {
+                .stat {
+                    h4 {
+                        color: rgba($color: #000000, $alpha: 0.6);
+                    }
+                }
+            }
+        }
+        .blue {
+            height: 100%;
+            width: 100%;
+            background-color: $color_blue_head;
+            img {
+                margin-bottom: 16px;
+            }
+            .info {
+                h2 {
+                    line-height: 24px;
+                }
+            }
+        }
+        .offices {
+            justify-content: space-between;
+            .map {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 34px;
+                left: 33px;
+                span {
+                    text-transform: uppercase;
+                    margin-left: 9px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .info {
+                bottom: 24px;
+                .title {
+                    line-height: 43px;
+                    font-size: 43px;
+                    margin-bottom: 30px;
+                }
+                .order_type {
+                    margin-bottom: 26px;
+                }
+            }
+        }
+    }
+}

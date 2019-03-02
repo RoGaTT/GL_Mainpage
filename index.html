@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GetLooky_Mainpage</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='dist/style.css'>
 </head>
 <body>
@@ -42,11 +43,276 @@
                 </a>
             </div>
         </div>
-        <div class="main">
-            
+        <div class="main container">
+            <div class="title">
+                <h1>Недвижимость для бизнеса<br />находится на GetLooky</h1>
+                <h2>Назначайте просмотр. Встречайтесь с собственником.<br />Арендуйте или покупайте.</h2>
+            </div>
+            <!-- <div class="location_search"></div> -->
+            <form action="" class="search" name='search'>
+                <div class="row no-gutters first_row">
+                    <div class="location select col-3">
+                        <select name="location">
+                            <option value="0">Санкт-Петербург</option>
+                            <option value="1">Москва</option>
+                        </select>
+                        <img src="src/img/arrow_down.png" alt="" class='arrow'>
+                    </div>
+                    <div class="text_field col-6">
+                        <input type="text" placeholder="Введите название, адрес, метро, район или город" name='text'>
+                    </div>
+                    <div class="search_button col-3">
+                        <input type="submit" value='Найти'>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-3 select">
+                        <select name="rent_type" id="">
+                            <option value="0">Арендовать</option>
+                            <option value="1">Купить</option>
+                        </select>
+                        <img src="src/img/arrow_down.png" alt="" class="arrow">
+                    </div>
+                    <div class="col-3 select">
+                        <select name="room_type" id="">
+                            <option value="0">Торговое помещение</option>
+                            <option value="1">Тест</option>
+                            <option value="2">Тест</option>
+                        </select>
+                        <img src="src/img/arrow_down.png" alt="" class="arrow">
+                    </div>
+                    <div class="col-3 select">
+                        <select name="area" id="">
+                            <option value="0">Площадь</option>
+                            <option value="1">Тест</option>
+                            <option value="2">Тест</option>
+                        </select>
+                        <img src="src/img/arrow_down.png" alt="" class="arrow">
+                    </div>
+                    <div class="col-3 select">
+                        <select name="price" id="">
+                            <option value="0">210—530 тыс. за м²</option>
+                            <option value="1">Тест</option>
+                            <option value="2">Тест</option>
+                        </select>
+                        <img src="src/img/arrow_down.png" alt="" class="arrow">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
-
+    <section id="advertisements">
+        <div class="content">
+            <div class="row no-gutters">
+                <div class="col-6 box">
+                    <div class="block offices">
+                        <img src="src/img/offices_promo.jpg" alt="" class="bg">
+                        <a class="map">
+                            <img src="src/img/geo_location.png" alt="">
+                            <span>Показать на карте</span>
+                        </a>
+                        <div class="info">
+                            <h2 class='title'>Офисы</h2>
+                            <div class="order_type stats">
+                                <div>
+                                    <div class="stat">
+                                        <h3>Аренда</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Продажа</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats big">
+                                <div class="sizes">
+                                    <div class="stat">
+                                        <h3>Офисы 10-50 м²</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Офисы 50-100 м²</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Офисы 100-250 м²</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                                <div class="types">
+                                    <div class="stat">
+                                        <h3>Опенспейс</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Кабинетная планировка</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Этаж</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row no-gutters">
+                        <div class="col-6 box">
+                            <div class="block">
+                                <img src="src/img/stocks_promo.jpg" alt="" class="bg">
+                                <div class="info">
+                                    <h2 class="title">Склады</h2>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="stat">
+                                                <h3>Аренда</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                            <div class="stat">
+                                                <h3>Продажа</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 box">
+                            <a href='#advertisements' class="block white">
+                                <div class="info">
+                                    <img src="src/img/factory_icon.png" alt="">
+                                    <h2 class="title">Производства</h2>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="stat">
+                                                <h3>Аренда</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                            <div class="stat">
+                                                <h3>Продажа</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-6 box">
+                            <a href='#advertisements' class="block white">
+                                <div class="info">
+                                    <img src="src/img/sellers_icon.png" alt="">
+                                    <h2 class="title">Торговые</h2>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="stat">
+                                                <h3>Аренда</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                            <div class="stat">
+                                                <h3>Продажа</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 box">
+                            <a href='#advertisements' class="block">
+                                <img src="src/img/lofts_promo.jpg" alt="" class="bg">
+                                <div class="info">
+                                    <h2 class="title">Лофты</h2>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="stat">
+                                                <h3>Аренда</h3>
+                                                <h4>0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-3 box">
+                    <div class="block">
+                        <img src="src/img/stocks_promo.jpg" alt="" class="bg">
+                        <div class="info">
+                            <h2 class="title">Склады</h2>
+                            <div class="stats">
+                                <div>
+                                    <div class="stat">
+                                        <h3>Аренда</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Продажа</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 box">
+                    <a href='#advertisements' class="block white">
+                        <div class="info">
+                            <img src="src/img/factory_icon.png" alt="">
+                            <h2 class="title">Производства</h2>
+                            <div class="stats">
+                                <div>
+                                    <div class="stat">
+                                        <h3>Аренда</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Продажа</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3 box">
+                    <div class="block">
+                        <img src="src/img/stocks_promo.jpg" alt="" class="bg">
+                        <div class="info">
+                            <h2 class="title">Склады</h2>
+                            <div class="stats">
+                                <div>
+                                    <div class="stat">
+                                        <h3>Аренда</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="stat">
+                                        <h3>Продажа</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 box">
+                    <a href='#advertisements' class="block blue">
+                        <div class="info">
+                            <img src="src/img/see_all_icon.png" alt="">
+                            <h2 class="title">Смотреть все предложения</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
