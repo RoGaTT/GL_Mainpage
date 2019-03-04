@@ -22,6 +22,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "@babel/core": "^7.3.4"
+    "@babel/core": "^7.3.4",
+    "whatwg-fetch": "^3.0.0"
   }
 }
