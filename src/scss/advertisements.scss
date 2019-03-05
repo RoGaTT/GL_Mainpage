@@ -101,6 +101,17 @@ section#advertisements {
             img {
                 margin-bottom: 16px;
             }
+            &:hover {
+                background-color: $color_blue_head;
+                color: white;
+                .info {
+                    .stat {
+                        h4 {
+                            color: rgba($color: #fff, $alpha: 0.6);
+                        }
+                    }
+                }
+            }
             .info {
                 .stat {
                     h4 {

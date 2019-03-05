@@ -320,66 +320,27 @@
                 <h3>Самые популярные объявления в разделе об аренде</h3>
             </div>
             <form action="" class="build_type">
-                <input name='build_type' type="radio" id='radio_office' checked>
-                <label for="radio_office">Офис</label>
-                <input name='build_type' type="radio" id='radio_stock'>
-                <label for="radio_stock">Склад</label>
-                <input name='build_type' type="radio" id='radio_seller'>
-                <label for="radio_seller">Торговые</label>
-                <input name='build_type' type="radio" id='radio_factory'>
-                <label for="radio_factory">Производство</label>
-                <input name='build_type' type="radio" id='radio_land'>
-                <label for="radio_land">Земля</label>
-                <input name='build_type' type="radio" id='radio_coworking'>
-                <label for="radio_coworking">Коворкинг</label>
-                <input name='build_type' type="radio" id='radio_confernce'>
-                <label for="radio_confernce">Конференц-зал</label>
-                <input name='build_type' type="radio" id='radio_talking_room'>
-                <label for="radio_talking_room">Переговорные</label>
-                <input name='build_type' type="radio" id='radio_loft'>   
-                <label for="radio_loft">Лофт</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='office' checked>
+                <label for="office">Офис</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='stock'>
+                <label for="stock">Склад</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='seller'>
+                <label for="seller">Торговые</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='factory'>
+                <label for="factory">Производство</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='land'>
+                <label for="land">Земля</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='coworking'>
+                <label for="coworking">Коворкинг</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='confernce'>
+                <label for="confernce">Конференц-зал</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='talking_room'>
+                <label for="talking_room">Переговорные</label>
+                <input name='build_type' class='rent_radio_button' type="radio" id='loft'>   
+                <label for="loft">Лофт</label>
             </form>
-            <div class="builds row no-gutters" id="builds_rent">
-                <div class="col-3 box">
-                    <div class="build_block" id="build_block_1">
-                        <div class="photos">
-                            <img src="src/img/build_block_promo.jpg" class="photo" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p>55 000 Р</p>
-                                    <span>1100 Р/м²</span>
-                                </div>
-                                <div class="build_location">
-                                    <p>59  м², 3 этаж, </p>
-                                    <a href="#advertisements" id="build_bc">БЦ "Сенатор"</a>
-                                </div>
-                            </div>  
-                            <hr>
-                            <div class="address">
-                                <p>Большой проспект П.С., д. 29, корпус тотакто</p>
-                                <div class="metro">
-                                    <div class="station">
-                                        <div class="icon red"></div>
-                                        <div class="station_info">
-                                            <h5 class="name">Площадь Восстания</h5>
-                                            <span class="distance">(20 минут пешком)</span>
-                                        </div>
-                                    </div>
-                                    <div class="station">
-                                        <div class="icon purple"></div>
-                                        <div class="station_info">
-                                            <h5 class="name">Чкаловская</h5>
-                                            <span class="distance">(20 минут пешком)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="builds row no-gutters" id="builds_rent"></div>
+            <a href="#rent" class='show_all-button'>Все предложения</a>
         </div>
     </section>
     <script type="text/javascript" src="dist/bundle.js"></script>
