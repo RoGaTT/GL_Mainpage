@@ -4,6 +4,7 @@
 @import './rent.scss';
 @import './buildings.scss';
 @import './sell.scss';
+@import './commercial_land.scss';
 
 //Блоки
 @import './build_promos.scss';
@@ -19,7 +20,10 @@ body, html {
     font-family: $font_main;
     min-width: 1280px;
 }
+body {
 
+    // overflow-x: hidden;
+}
 i.arrow {
     border: 5px solid transparent;	
     border-top: 5px solid green;
