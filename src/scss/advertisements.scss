@@ -98,8 +98,20 @@ section#advertisements {
             width: 100%;
             background-color: #fff;
             color: #000;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
             img {
                 margin-bottom: 16px;
+            }
+            &:hover {
+                background-color: $color_blue_head;
+                color: white;
+                .info {
+                    .stat {
+                        h4 {
+                            color: rgba($color: #fff, $alpha: 0.6);
+                        }
+                    }
+                }
             }
             .info {
                 .stat {
@@ -113,6 +125,8 @@ section#advertisements {
             height: 100%;
             width: 100%;
             background-color: $color_blue_head;
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
             img {
                 margin-bottom: 16px;
             }
@@ -120,6 +134,9 @@ section#advertisements {
                 h2 {
                     line-height: 24px;
                 }
+            }
+            &:hover {
+                opacity: 0.8;
             }
         }
         .offices {
