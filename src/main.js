@@ -5,6 +5,7 @@ import createBuildsContainer from './js/builds'
 
 const init = () => {
     createBuildsContainer('rent')
+    createBuildsContainer('sell')
 }
 document.addEventListener('DOMContentLoaded', () =>{
     init()

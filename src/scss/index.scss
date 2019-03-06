@@ -2,17 +2,21 @@
 @import './header.scss';
 @import './advertisements.scss';
 @import './rent.scss';
+@import './buildings.scss';
+@import './sell.scss';
 
 //Блоки
-@import './silder_block.scss';
+@import './build_promos.scss';
 
 //Утилиты
 @import 'core/scss/reset.scss';
 @import 'core/scss/_fonts.scss';
 
+* {
+    box-sizing: border-box;
+}
 body, html {
     font-family: $font_main;
-    box-sizing: border-box;
     min-width: 1280px;
 }
 

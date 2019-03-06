@@ -187,6 +187,15 @@ section#header {
                     border: 1px solid $color_input_border;
                     padding-left: 15px;
                     outline: none;
+                    &::placeholder {
+                        opacity: 1;
+                        transition: opacity 0.5s ease-in;
+                    }
+                    &:focus {
+                        &::placeholder {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
             .search_button {
@@ -199,6 +208,11 @@ section#header {
                     text-transform: uppercase;
                     color: #fff;
                     border: none;
+                    opacity: 1;
+                    transition: opacity 0.2s ease-in;
+                    &:hover {
+                        opacity: 0.9;
+                    }
                 }
             }
         }

@@ -235,15 +235,15 @@ const createBuildsContainer = (type) => {
             const initFavorite = () => {
                 const favorite_link = document.getElementById(`${type}_build_favorite_link_${block_id}`)
                 const favorite_icon = document.getElementById(`${type}_build_favorite_icon_${block_id}`)
-                favorite_link.addEventListener('mouseenter', (e) => {
+                favorite_icon.addEventListener('mouseenter', (e) => {
                     favorite_icon.setAttribute('src', 'src/img/build_favorite_icon-active.png')
                 })
-                favorite_link.addEventListener('mouseout', (e) => {
+                favorite_icon.addEventListener('mouseout', (e) => {
                     if (!favorite_icon.classList.contains('active')) {
                         favorite_icon.setAttribute('src', 'src/img/build_favorite_icon.png')
                     }
                 })
-                favorite_link.addEventListener('click', (e) => {
+                favorite_icon.addEventListener('click', (e) => {
                     if (!favorite_icon.classList.contains('active')) {
                         favorite_icon.classList.add('active')
                         //TODO Добавить функцию для сохранения состояния

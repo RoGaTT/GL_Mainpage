@@ -1,6 +1,6 @@
 @import '../core/scss/colors';
 
-.slider_block {
+.build_promos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +39,15 @@
             text-transform: uppercase;
             cursor: pointer;
             margin-left: 16px;
+            opacity: 1;
+            transition: all 0.2s ease-in;
             &:first-of-type {
                 margin-left: 0;
+            }
+            &:hover {
+                background-color: $color_blue_head;
+                color: white;
+                opacity: 0.8;
             }
         }
     }
@@ -112,6 +119,7 @@
                         justify-content: center;
                         z-index: 10;
                         &_block {
+                            cursor: pointer;
                             display: flex;
                             align-items: center;
                             width: 100%;
@@ -249,12 +257,13 @@
         padding: 15px 41px;
         background-color: $color_blue_head;
         color: white;
+        text-decoration: none;
         font-size: 20px;
         text-transform: uppercase;
+        transition: all 0.4s ease-in-out;
         &:hover {
             background-color: white;
             outline: 1px solid $color_blue_head;
-            text-decoration: underline;
             color: $color_blue_head;
         }
     }
