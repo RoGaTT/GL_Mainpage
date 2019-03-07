@@ -170,18 +170,6 @@ const createBuildsContainer = (type) => {
         </div>
         `
     }
-    const getContainerContent = (id) => {
-        return new Promise((resolve) => {
-            blocks_container.innerHTML = preloader;
-            setTimeout(() => {
-                if (metaData.length > 0) {
-                    blocks_container.innerHTML = metaData.map((block_data, index) => getBlockContent(block_data, index)).join('')
-                }
-                resolve()
-            }, 1000)
-        }) 
-    }
-    //Переключатели
     const initBlock = (block_id) => {
         const changePhoto = (block_id, nav_id, nav_element) => {
             const photo = document.getElementById(`${type}_build_block_photo_${block_id}`)
@@ -271,13 +259,24 @@ const createBuildsContainer = (type) => {
             })
         }
     }
+    const getContainerContent = (id) => {
+        return new Promise((resolve) => {
+            blocks_container.innerHTML = preloader;
+            setTimeout(() => {
+                if (metaData.length > 0) {
+                    blocks_container.innerHTML = metaData.map((block_data, index) => getBlockContent(block_data, index)).join('')
+                }
+                resolve()
+            }, 1000)
+        })
+        .then(() => {
+            initRadioButtons();
+            for (let i = 0; i < blocks.length; i++) {
+                initBlock(i)
+            }
+        })
+    }
     getContainerContent()
-    .then(() => {
-        initRadioButtons();
-        for (let i = 0; i < blocks.length; i++) {
-            initBlock(i)
-        }
-    })
 }
 
 export default createBuildsContainer

@@ -7,7 +7,8 @@
     <title>GetLooky_Mainpage</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel='stylesheet' href='dist/style.css'>
+    <link rel="stylesheet" href="src/core/owl-carousel/owl.carousel.css"/>
+    <link rel='stylesheet' href='dist/style.css'/>
 </head>
 <body>
     <section id="header">
@@ -416,7 +417,7 @@
                 <h3>Предложения на сегодняшний день</h3>
             </div>
             <form action="" class="build_type">
-                <input name='build_type' class='sell_radio_button' type="radio" id='sell_factory'>
+                <input name='build_type' class='sell_radio_button' type="radio" id='sell_factory' checked>
                 <label for="sell_factory">Офисы</label>
                 <input name='build_type' class='sell_radio_button' type="radio" id='sell_land'>
                 <label for="sell_land">Торговые</label>
@@ -472,6 +473,36 @@
             </div>
         </div>
     </section>
+    <section id="find_best">
+        <div class="find_best">
+            <h4>Найдите лучшее помещения для бизнеса</h4>
+            <a href="#find_best">Найти</a>
+        </div>
+    </section>
+    <section id="main_fast_search">
+        <div class="container">
+            <div class="fast_search">
+                <div class="title">
+                    <h2>Быстрый поиск недвижимости</h2>
+                    <h3>Самые популярные объявления в разделе о продаже всех видов жилья </h3>
+                </div>
+                <form action="" class="search_type">
+                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_factory' checked>
+                    <label for="sell_factory">Бизнес-центры</label>
+                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_land'>
+                    <label for="sell_land">Торговые помещения</label>
+                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_coworking'>
+                    <label for="sell_coworking">Производство</label>
+                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_confernce'>
+                    <label for="sell_confernce">Склады и ОСЗ</label>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="src/core/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 </html>

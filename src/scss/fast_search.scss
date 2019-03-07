@@ -1,0 +1,52 @@
+.fast_search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 16px;
+            color: $color_grey_text;
+            margin-bottom: 25px;
+        }
+    }
+    form.search_type {
+        display: flex;
+        input {
+            display: none;
+            &:checked {
+                & + label {
+                    background-color: $color_blue_head;
+                    color: #fff;
+                }
+            }
+        }
+        label {
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #000;
+            border: 1px solid $color_input_border;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-left: 16px;
+            opacity: 1;
+            transition: all 0.2s ease-in;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:hover {
+                background-color: $color_blue_head;
+                color: white;
+                opacity: 0.8;
+            }
+        }
+    }
+}

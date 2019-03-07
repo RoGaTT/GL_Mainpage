@@ -1,0 +1,35 @@
+@import 'core/scss/_colors.scss';
+
+section#find_best {
+    background-color: $color_blue_head;
+    height: 100px;
+    .find_best {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h4 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 700;
+            font-size: 26px;
+        }
+        a {
+            padding: 15px 70px;
+            background: none;
+            transition: all 0.5s ease-in;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid white;
+            margin-left: 51px;
+            &:hover {
+                background-color: #fff;
+                color: $color_blue_head;
+                text-decoration: none;
+                border: 1px solid $color_blue_head;
+
+            }
+        }
+    }
+}
