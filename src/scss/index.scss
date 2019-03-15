@@ -8,6 +8,7 @@
 @import './steps.scss';
 @import './find_best.scss';
 @import './main_fast_search.scss';
+@import './write_about.scss';
 
 //Блоки
 @import './fast_search.scss';
@@ -16,17 +17,20 @@
 //Утилиты
 @import 'core/scss/reset.scss';
 @import 'core/scss/_fonts.scss';
+@import 'core/scss/_patterns.scss';
 
 * {
     box-sizing: border-box;
 }
 body, html {
     font-family: $font_main;
-    min-width: 1280px;
 }
 body {
-
+    min-width: 1280px;
     // overflow-x: hidden;
+}
+.container {
+    min-width: 1280px;
 }
 i.arrow {
     border: 5px solid transparent;	

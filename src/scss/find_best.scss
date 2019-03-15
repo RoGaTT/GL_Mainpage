@@ -2,12 +2,11 @@
 
 section#find_best {
     background-color: $color_blue_head;
-    height: 100px;
+    padding: 25px;
     .find_best {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
         h4 {
             text-transform: uppercase;
             color: white;
@@ -29,6 +28,23 @@ section#find_best {
                 text-decoration: none;
                 border: 1px solid $color_blue_head;
 
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section#find_best {
+        .find_best {
+            flex-direction: column;
+            text-align: center;
+            h4 {
+                width: 600px;
+            }
+            a {
+                margin-left: 0;
+                margin-top: 25px;
+                padding: 10px 50px;
             }
         }
     }

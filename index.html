@@ -315,7 +315,7 @@
         </div>
     </section>
     <section id="rent">
-        <div class="container build_promos">
+        <div class="build_promos">
             <div class="title">
                 <h2>Аренда</h2>
                 <h3>Самые популярные объявления в разделе об аренде</h3>
@@ -411,7 +411,7 @@
         </div>
     </section>
     <section id="sell">
-        <div class="container build_promos">
+        <div class="build_promos">
             <div class="title">
                 <h2>Продажа</h2>
                 <h3>Предложения на сегодняшний день</h3>
@@ -480,26 +480,41 @@
         </div>
     </section>
     <section id="main_fast_search">
-        <div class="container">
-            <div class="fast_search">
+        <div class="container-fluid no-gutters">
+            <div class="fast_search container">
                 <div class="title">
                     <h2>Быстрый поиск недвижимости</h2>
                     <h3>Самые популярные объявления в разделе о продаже всех видов жилья </h3>
                 </div>
                 <form action="" class="search_type">
-                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_factory' checked>
-                    <label for="sell_factory">Бизнес-центры</label>
-                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_land'>
-                    <label for="sell_land">Торговые помещения</label>
-                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_coworking'>
-                    <label for="sell_coworking">Производство</label>
-                    <input name='search_type' class='sell_radio_button' type="radio" id='sell_confernce'>
-                    <label for="sell_confernce">Склады и ОСЗ</label>
+                    <input name='search_type' class='fast_search_radio_button' type="radio" id='fast_search_BC' checked>
+                    <label for="fast_search_BC">Бизнес-центры</label>
+                    <input name='search_type' class='fast_search_radio_button' type="radio" id='fast_search_SC'>
+                    <label for="fast_search_SC">Торговые помещения</label>
+                    <input name='search_type' class='fast_search_radio_button' type="radio" id='fast_search_factory'>
+                    <label for="fast_search_factory">Производство</label>
+                    <input name='search_type' class='fast_search_radio_button' type="radio" id='fast_search_stock'>
+                    <label for="fast_search_stock">Склады и ОСЗ</label>
                 </form>
+                <div class="fast_search_content"></div>
+                <form class="fast_search_more_handler">
+                </form>
+            </div>
+            <div class="fast_search_more">
+                <div class="container">
+                    <div class="fast_search_more_content wrapped">
+                
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    <section id="write_about">
+        <h4 class="title">
+            О нас пишут и говорят
+        </h4>
+        <img src="src/img/write_about_us.png" alt="">
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <script src="src/core/owl-carousel/owl.carousel.min.js"></script>

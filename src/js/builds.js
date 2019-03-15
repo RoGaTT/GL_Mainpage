@@ -126,7 +126,7 @@ const createBuildsContainer = (type) => {
                 </div>`
         }).join('')
         return `
-        <div class="col-3 box">
+        <div class="box">
             <div class="build_block ${type}_build_block" id="${type}_build_block_${block_id}">
                 <div class="photos">
                     <div class="tools">
@@ -251,13 +251,9 @@ const createBuildsContainer = (type) => {
 
     }
     const initRadioButtons = () => {
-        let radio_buttons = document.getElementsByClassName(type + '_radio_button')
-        for (let i = 0; i < radio_buttons.length; i++) {
-            let elem = radio_buttons[i]
-            elem.addEventListener('click', (e) => {
-                getContainerContent()
-            })
-        }
+        $(`.${type}_radio_button`).on('click', (e) => {
+            getContainerContent()
+        })
     }
     const getContainerContent = (id) => {
         return new Promise((resolve) => {

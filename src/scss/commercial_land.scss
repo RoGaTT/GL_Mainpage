@@ -1,5 +1,6 @@
+@import 'core/scss/_colors.scss';
+
 section#commercial_land {
-    overflow: hidden;
     .commercial_land {
         display: flex;
         justify-content: center;
@@ -47,6 +48,9 @@ section#commercial_land {
                     width: 200px;
                     &:first-child {
                         margin-right: 15px;
+                    }
+                    &:hover {
+                        background-color: rgba($color: $color_green, $alpha: 0.7);
                     }
                 }
             }
