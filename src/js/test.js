@@ -1,2 +1,4 @@
-const text = "Подскажи размер площади помещения"
-console.log(encodeURIComponent(text))
+let y = 1;
+let x = y = 2;
+
+console.log(x);

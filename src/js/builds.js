@@ -252,6 +252,7 @@ const createBuildsContainer = (type) => {
     }
     const initRadioButtons = () => {
         $(`.${type}_radio_button`).on('click', (e) => {
+            console.log(e.target.id)
             getContainerContent()
         })
     }
@@ -266,12 +267,12 @@ const createBuildsContainer = (type) => {
             }, 1000)
         })
         .then(() => {
-            initRadioButtons();
             for (let i = 0; i < blocks.length; i++) {
                 initBlock(i)
             }
         })
     }
+    initRadioButtons();
     getContainerContent()
 }
 
