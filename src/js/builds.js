@@ -1,3 +1,6 @@
+import block1 from '../img/build_block_promo.jpg'
+import block2 from '../img/build_block_promo_2.jpg'
+
 const createBuildsContainer = (type) => {
     const blocks_container = document.getElementById('builds_'+type)
     const blocks = document.getElementsByClassName(type + '_build_block');
@@ -7,7 +10,7 @@ const createBuildsContainer = (type) => {
             price: 55000,
             metr_price: 1100,
             area: 59,
-            photos: ['src/img/build_block_promo.jpg', 'src/img/build_block_promo_2.jpg'],
+            photos: [block1, block2],
             floor: 3,
             BC_name: 'Сенатор',
             address: 'Большой проспект П.С., д. 29, корпус тотакто',
@@ -33,7 +36,7 @@ const createBuildsContainer = (type) => {
             price: 55000,
             metr_price: 1100,
             area: 59,
-            photos: ['src/img/build_block_promo.jpg'],
+            photos: [block1],
             floor: 3,
             BC_name: 'Сенатор',
             address: 'Большой проспект П.С., д. 29, корпус тотакто',
@@ -59,7 +62,7 @@ const createBuildsContainer = (type) => {
             price: 55000,
             metr_price: 1100,
             area: 59,
-            photos: ['src/img/build_block_promo.jpg'],
+            photos: [block1],
             floor: 3,
             BC_name: 'Сенатор',
             address: 'Большой проспект П.С., д. 29, корпус тотакто',
@@ -85,7 +88,7 @@ const createBuildsContainer = (type) => {
             price: 55000,
             metr_price: 1100,
             area: 59,
-            photos: ['src/img/build_block_promo.jpg'],
+            photos: [block1],
             floor: 3,
             BC_name: 'Сенатор',
             address: 'Большой проспект П.С., д. 29, корпус тотакто',

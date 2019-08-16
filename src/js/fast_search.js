@@ -1,3 +1,6 @@
+import arrowGrey from '../img/arrow_down_grey.png'
+import arrowWhite from '../img/arrow_down_white.png'
+
 const createFastSearchContainer = (type) => {
     let metaData = [
         {
@@ -202,7 +205,7 @@ const createFastSearchContainer = (type) => {
                     <input type="radio" name='showmore_type' id="showmore_${index}">
                     <label for="showmore_${index}">
                         <span>Больше вариантов</span>
-                        <img src="src/img/arrow_down_grey.png">
+                        <img src="${arrowGrey}">
                     </label> 
                 `
             }).join(''))
@@ -215,7 +218,7 @@ const createFastSearchContainer = (type) => {
                     labels.html(
                         `
                             <span>Больше вариантов</span>
-                            <img src="src/img/arrow_down_grey.png">
+                            <img src="${arrowGrey}">
                         `
                     )
                     labels.removeClass('selected')
@@ -226,7 +229,7 @@ const createFastSearchContainer = (type) => {
                     label.html(
                         `
                             <span>Скрыть</span>
-                            <img src="src/img/arrow_down_white.png" style="transform: rotate(180deg); opacity: 0.5;">
+                            <img src="${arrowWhite}" style="transform: rotate(180deg); opacity: 0.5;">
                         `
                     )
                     label.addClass('selected')
