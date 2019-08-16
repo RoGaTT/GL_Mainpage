@@ -1,6 +1,7 @@
 import './scss/index.scss'
-// import './js/events'
-//Блоки
+import './core/slick/slick.css'
+import './core/slick/slick-theme.css'
+import './core/slick/slick.min.js'
 import createBuildsContainer from './js/builds'
 import createFastSearchContainer from './js/fast_search';
 
